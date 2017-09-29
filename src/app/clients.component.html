@@ -1,0 +1,29 @@
+<section id="clients" class="clients section">
+    <div class="container">
+        <div class="border-topbottom">
+        <div class="creicon"><img [src]="creaxis_icon" /></div>
+        <h1 class="uppercase"><span class="grey700">Cast</span> <span class="amber400">of Clients</span></h1>
+        <div class="client-brands">
+            <div *ngFor="let client of clients" class="item">
+                <img [src]="client.imgUrl" alt=""/>
+            </div>      
+        </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="litterbox">
+            <div class="tweet" *ngFor="let client of (clients | clientTestimonial ) ">
+                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                <blockquote>
+                    {{client.testimonial}}
+                </blockquote>
+                <p class="tweeter"> 
+                    {{client.person}} | {{client.designation}} <br>
+                    {{client.name}}
+                </p>
+            </div>      
+        </div>
+    </div>
+</section>

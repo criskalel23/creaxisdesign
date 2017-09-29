@@ -1,0 +1,59 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.contact {
+    //@extend .padding-top-bottom;
+    background-color: $grey900;
+    color: $white;
+    position: fixed;
+    display: block;
+    padding: 10px 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+a {
+    color: $grey300;
+}
+.social {
+    vertical-align: middle;
+    text-align: right;
+}    
+
+.fa {
+    font-size: 20px;
+    padding: 0 10px 0 0;
+    display: inline-block;
+}
+a:hover {
+    color: $amber400;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.item {
+    flex: 1 0 50%;
+    align-content: center;
+    p {
+        display: none;
+    }
+}
+.info {
+    a { padding-right: 10px; }
+}
+
+@media (min-width: 768px) {
+    .item {
+        align-items: center;
+        p {
+            display: inline-block;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}

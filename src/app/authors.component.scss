@@ -1,0 +1,14 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.whoweare {
+    @extend .padding-top-bottom;
+    .col-md-6 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content {
+        text-align: left;
+        margin-top: 20px;
+    }
+}

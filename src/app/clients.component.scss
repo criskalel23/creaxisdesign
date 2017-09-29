@@ -1,0 +1,44 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+// flex-box
+.client-brands {
+    display: flex;
+    flex-flow: row wrap;
+
+    .item {
+        flex: 0 50%;
+        opacity: .5;
+        min-width: 150px;
+        //border: 1px solid #ccc;
+    }
+}
+
+.testimonials {
+    @extend .padding-top-bottom;
+    width: 100%;
+    margin-bottom: 50px;
+    //display: none;
+    .litterbox {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tweet {
+        flex: 1 1 auto;
+        //border: 1px solid rgba(200,200,200, .5);
+        box-shadow: 0 0 2px rgba(100,100,100, .2);
+        padding:15px;
+        width: 100%;
+        margin: 5px;
+    }
+    i {
+        color: $grey300;
+    }
+    blockquote {
+        font-weight: 200;
+        font-style: italic;
+    }
+    .tweeter {
+        text-align: left;
+    }
+}

@@ -1,0 +1,18 @@
+<section id="projects" class="projects section">
+    <div class="container">
+        <div class="grid">
+            <div class="item" *ngFor="let proj of projects">
+                <div class="box">
+                    <a (click)="onSelect(proj)" class="image" [routerLink]="['/case-study', proj.id]">
+                        <img [src]="proj.heros[0]"/>
+                    </a>
+                    <div class="details">
+                        <p>{{proj.cat}}</p>
+                        <h2>{{proj.title}}</h2>
+                        <p>{{proj.objective}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

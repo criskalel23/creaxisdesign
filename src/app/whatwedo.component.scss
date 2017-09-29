@@ -1,0 +1,31 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.quadrant {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    
+    .item {
+        //border: 1px solid rgba(220,220,220,.2);
+        flex: 1 0 40%;
+        width: 100%;
+        min-height: 100px;
+        margin:5px;
+        text-align: center;
+        align-items: center;
+        color: $white;
+
+        i {
+            font-size: 3em;
+            line-height: 2em;
+            font-weight: 300;
+        }
+
+        a {
+            color: $white;
+            width: 100%;
+            display: block;
+        }
+    }
+}

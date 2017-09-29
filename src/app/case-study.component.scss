@@ -1,0 +1,138 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+@import '../assets/scss/layout';
+
+.case-study {
+    @extend .section-padding;
+    .preview {
+        margin-bottom: 20px;
+        border: 1px solid $grey200;
+        background-repeat: repeat;
+        overflow: hidden;
+    }
+}
+h2 {
+    margin: 5px 0;
+    padding:0;
+    font-size: 50px;
+}
+label {
+    font-size: 14px;
+    font-weight: 300;
+}
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .grid-item {
+        flex: 0 1 100%;
+        border: 1px solid $grey200;
+        padding:20px;
+    }
+}
+.detail-row {
+    margin-bottom: 20px;
+}
+.result {
+    ul {
+        list-style: none;
+        padding:0;
+        font-weight: 300;
+        li {
+            font-size: 16px;
+            padding: 5px 0;
+        }
+        li:before {
+            content: '\f00c';
+            @extend .glyphicon;
+            padding-right:10px;
+            color: $amber400;
+        }
+    }
+    .box {
+        background-color: $white;
+        padding: 15px 25px;
+        border: 1px solid $grey100;
+    }
+}
+.thumbnails {
+    align-content: center;
+    margin: 0 auto;
+    .img-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .item {
+        flex: 0 1 100%;
+    }
+}
+.content-box {
+    margin: 0;
+    padding: 20px 30px;
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+}    
+.content-item {
+    margin-bottom: 20px;
+}
+.carousel-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+.carousel-grid-item {
+    flex: 1 0 100%;
+}
+
+.carousel-inner {
+    width: auto;
+    //background-color: $grey100;
+}
+
+.carousel-indicators {
+    position: relative;
+    width:100%;
+    left: 0;
+    margin: 0;
+    li {
+        border: 1px solid $grey300;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        padding-left: 40px;
+    }    
+    .carousel-grid-item {
+        flex: 1 0 65% !important;
+        background-image: url('../assets/images/bg-dot.gif');
+        background-repeat: repeat;
+    }
+    .carousel-grid-item.content {
+        flex: 1 0 35% !important;
+    }
+
+    .grid-item {
+        flex: 1 0 30% !important;
+    }
+
+    .carousel-indicators {
+        bottom: 0;
+        left: 0;
+        margin-bottom: 10px;
+        width: 15px;
+        li {
+            display: block;
+            margin:2px auto !important;
+        }
+    }
+    .img-grid {
+        
+        .item {
+            flex: 0 1 360px;
+            margin: 10px;
+        }
+    }
+        
+}

@@ -1,0 +1,13 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.works {
+    @extend .padding-top-bottom;
+
+    .item {
+        margin-top: 20px;
+    }
+    .btn-border {
+        margin-top: 25px;
+    }
+}

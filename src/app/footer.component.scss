@@ -1,0 +1,20 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.footer {
+
+    background-color: $grey900;
+    border-top: 1px solid rgba(200,200,200, .1);
+    p {
+        font-size: 13px;
+        line-height: 20px;
+        height: 20px;
+        margin:0;
+        color: $grey100;
+    }
+
+}
+.contact {
+    position: fixed;
+    padding: 10px 0;
+}

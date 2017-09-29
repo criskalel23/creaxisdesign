@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,600,700,800');
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    } 
+}
+
+blockquote {
+    border-left: none;
+    border-bottom: 1px solid rgba(200,200,200, .2);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+// Full Screen Video Banner
+.full-screen {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.amber400 {
+    color: $amber400;
+}
+.grey200 {
+    color: $grey200;
+}
+.grey300 {
+    color: $grey300;
+}
+.grey700 {
+    color: $grey700;
+}
+
+.creicon {
+    max-width: 75px;
+    padding: 15px 5px;
+    text-align: center;
+    background-color: $grey200;
+}
+.creicon-dark {
+    max-width: 75px;
+    padding: 15px 5px;
+    text-align: center;    
+    background-color: $grey900;
+}
+
+// content title
+.content-title {
+    font-size: 4.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content-desc {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+//buttons 
+.btn-border {
+    border-radius: 0;
+    border: 2px solid $amber400;
+    padding: 10px 20px;
+    background: none;
+    i {
+        padding-left: 10px;
+    }
+}
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-color: $grey800;
+}
+.bg-mask {
+    @extend .padding-top-bottom;
+    background-color: rgba(33,33,33, .7);
+}

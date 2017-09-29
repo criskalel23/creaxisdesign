@@ -1,0 +1,40 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+// navbar
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-creaxis {
+    background-color: rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgba(200,200,200, .2);
+}
+.navbar-brand {
+    padding: 17px 15px;
+    img {
+        width: 80%;
+    }
+}
+.navbar-toggle {
+    .icon-bar {
+        background-color: $grey500;
+    }
+}
+
+.nav li {
+    text-transform: uppercase;
+    a {
+        color: $grey300;
+    }
+    a:hover {
+        background-color: transparent;
+        color: $amber400;
+    }
+    a:focus {
+        background-color: transparent;
+    }
+    .active {
+        color: $amber400;
+    }
+}

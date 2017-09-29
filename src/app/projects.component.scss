@@ -1,0 +1,39 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+.projects {
+    @extend .section-padding;
+    background-color: $grey100;
+}
+
+.box {
+    padding:10px;
+    border: 1px solid $grey300;
+    background-color: $white;
+}
+.details {
+    margin-top: 20px;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+a {
+    display: block;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.item {
+    flex: 0 1 450px;
+}

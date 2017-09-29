@@ -1,0 +1,65 @@
+// screen sizes
+
+//variables
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+    .whoweare {
+        .content {
+            margin: 50px 0 !important;
+        }
+        img {
+            max-width: 80%;
+        }
+    }
+    .testimonials {
+        .litterbox {
+            .tweet {
+                flex: 1 1 25%;
+            }
+        }
+    }
+
+    .client-brands {   
+        .item {
+            flex: 0 20% !important;
+            opacity: .5;
+            //border: 1px solid #ccc;
+        }
+    }
+        
+    .contact {
+        .overlay {
+            width: 50% !important;
+        }
+        .social {
+            text-align: right;
+        }
+    }
+
+    .quadrant {
+        margin-top: 120px;
+    }
+ }
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {  
+    .content-desc {
+        max-width: 50%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

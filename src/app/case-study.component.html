@@ -1,0 +1,80 @@
+<section id="case-study" class="case-study" *ngIf="project">
+    <div class="container">
+            <h1>CASE STUDY</h1>
+        <div id="carousel-example-generic" class="preview carousel slide carousel-grid" data-ride="carousel">   
+            <!-- Wrapper for slides -->
+            <div class="carousel-grid-item carousel-inner" role="listbox">
+                <div *ngFor="let j of project.heros; let i = index" [ngClass]="i==0 ? 'item active' : 'item'" >
+                    <img [src]="project.heros[i]"/>
+                    <!-- <img src="../assets/images/case-toshiba-keep.jpg"/> -->
+                </div>                                                                                  
+            </div>
+            <div class="carousel-grid-item content">
+                <div class="content-box">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li *ngFor="let x of project.heros; let j = index" data-target="#carousel-example-generic" [attr.data-slide-to]="j" [ngClass]="j==0 ? 'active' : ''"></li>
+                        <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li> -->
+                    </ol>                      
+                    <div class="content-item">
+                        <label>{{project.cat}}:</label>
+                        <h2>{{project.title}}</h2>
+                    </div>
+                    <div class="content-item">
+                        <label>Brand:</label>
+                        <p>{{project.brand}}</p>
+                    </div>
+                    <div class="content-item">
+                        <label>Objective:</label>
+                        <p>{{project.objective}}</p>    
+                    </div>     
+                </div>              
+            </div>                   
+        </div>
+    </div>
+            
+    <div class="container">
+        <div class="detail-row grid">
+            <div class="grid-item">
+                <h4>Challenge:</h4>
+                <p>
+                    {{project.challenge}}
+                </p>
+            </div>
+            <div class="grid-item">
+                <h4>Hurdles:</h4>
+                <p>
+                    {{project.hurdle}}
+                </p>
+            </div>            
+            <div class="grid-item">
+                <h4>Advantages:</h4>
+                <p>
+                    {{project.advantages}}
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="detail-row result dottedbg" [ngStyle]="{'background-image' : bgDot}">
+        <div class="container">
+            <div class="box">
+                <h3>Results</h3>
+                <ul>
+                    <li *ngFor="let result of project.results; let i = index">
+                        {{i}}{{result}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="detail-row thumbnails">
+        <div class="container">
+            <div class="img-grid">
+                <div class="item" *ngFor="let thumbnail of project.thumbnails">
+                    <img [src]="thumbnail"/>
+                </div>                   
+            </div>            
+        </div>
+    </div>
+</section>

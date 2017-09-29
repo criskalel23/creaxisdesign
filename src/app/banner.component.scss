@@ -1,0 +1,42 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/screen';
+
+// hero banner
+.hero-banner{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    .hero-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        left: 0; right: 0;
+        padding: 0;
+        position: relative;
+        .hero-content {
+            position: absolute;
+            margin: 0 auto;
+            color: $white;
+            z-index: 2;
+            top: calc(50% - 100px) ;
+            left: 0; right: 0;
+        }
+        .video-wrapper {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            video {
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                position: relative;
+                top:0;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}

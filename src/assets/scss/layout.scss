@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,600,700,800');
+@import 'variables';
+@import 'screen';
+
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.glyphicon {
+    font-family: 'fontAwesome';
+}
+
+.dottedbg {
+    background: url('../assets/images/bg-dot.gif') repeat;
+    //background-color: $grey100;
+}
+
